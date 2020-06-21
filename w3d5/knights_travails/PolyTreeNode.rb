@@ -1,14 +1,12 @@
 class PolyTreeNode
+    
+    attr_reader :value, :parent, :children
 
     def initialize(value)
         @value = value
         @parent = nil
         @children = []
     end
-
-    # def inspect
-    #     "<value: #{@value}, parent: #{@parent.inspect}, children: #{@children.map(&:inspect)}"
-    # end
     
     def parent=(node)
         if parent != nil
@@ -48,6 +46,4 @@ class PolyTreeNode
         end
         nil
     end
-
-    attr_reader :value, :parent, :children
 end
