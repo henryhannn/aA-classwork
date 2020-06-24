@@ -1,30 +1,51 @@
 # PHASE 2
 def convert_to_int(str)
   Integer(str)
+rescue ArgumentError => err
+  p "Wrong argument type!!!"
+  nil
 end
 
 # PHASE 3
+
+class CoffeeError < StandardError ; end
+
 FRUITS = ["apple", "banana", "orange"]
 
 def reaction(maybe_fruit)
   if FRUITS.include? maybe_fruit
     puts "OMG, thanks so much for the #{maybe_fruit}!"
-  else 
-    raise StandardError 
+  elsif maybe_fruit == "coffee"
+    raise CoffeeError
+  else
+    raise ArgumentError
   end 
 end
 
 def feed_me_a_fruit
   puts "Hello, I am a friendly monster. :)"
 
-  puts "Feed me a fruit! (Enter the name of a fruit:)"
-  maybe_fruit = gets.chomp
-  reaction(maybe_fruit) 
+  begin
+    puts "Feed me a fruit! (Enter the name of a fruit:)"
+    maybe_fruit = gets.chomp
+    reaction(maybe_fruit)
+  rescue CoffeeError => err
+    puts "I like #{maybe_fruit}, but it's not a fruit. Try again!"
+    retry
+  rescue ArgumentError => err
+    puts "#{maybe_fruit.upcase} IS NOT A FRUIT!!!!"
+  end
 end  
 
 # PHASE 4
+
+class FriendshipError < StandardError ; end
+class InsufficientData < StandardError ; end
+
 class BestFriend
   def initialize(name, yrs_known, fav_pastime)
+    raise FriendshipError if yrs_known < 5
+    raise InsufficientData if name.length <= 0 || fav_pastime.length <= 0
     @name = name
     @yrs_known = yrs_known
     @fav_pastime = fav_pastime
