@@ -7,24 +7,14 @@ class Employee
         @boss = boss
     end
 
-    # def assign_salary(salary) 
-    #     @salary = salary 
-    # end 
-
-    # def assign_title(title) 
-    #     @title = title 
-    # end 
-
-    # def assign_boss(boss) 
-    #     @boss = boss 
-    # end 
-
     def bonus(multiplier)
         bonus = @salary * multiplier
     end
 end
 
 class Manager < Employee
+    attr_reader :employees
+
     def initialize(name, salary, title, boss = nil)
         super
         @employees = []
@@ -35,11 +25,19 @@ class Manager < Employee
     end 
 
     def bonus(multiplier)
-        sum = 0
-        @employees.each do |employee|
-            sum += employee.salary
+        self.total_employee_salary * multiplier
+    end
+
+    def total_employee_salary
+        total_salary = 0
+        self.employees.each do |employee|
+            if employee.is_a?(Manager)
+                total_salary += employee.salary + employee.total_employee_salary
+            else
+                total_salary += employee.salary
+            end
         end
-        sum * multiplier
+        total_salary
     end
 end
 p ned = Manager.new("Ned", 1000000, "Founder", nil)
@@ -50,7 +48,7 @@ p shawna = Employee.new("Shawna", 12000, "TA", darren)
 p "---------------------"
 p david = Employee.new("David", 10000, "TA", darren)
 
-ned.set_employees([darren, shawna, david])
+ned.set_employees([darren])
 darren.set_employees([shawna, david])
 darren.boss = ned
 p "---------------------"
