@@ -1,0 +1,765 @@
+  [1m[35m (286.0ms)[0m  [1m[35mCREATE DATABASE "routes_controllers_development" ENCODING = 'unicode'[0m
+  ↳ bin/rails:9
+  [1m[35m (166.9ms)[0m  [1m[35mCREATE DATABASE "routes_controllers_test" ENCODING = 'unicode'[0m
+  ↳ bin/rails:9
+Started GET "/" for 127.0.0.1 at 2020-07-08 14:25:04 -0700
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/Adrian/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/railties-5.2.4.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/Adrian/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/railties-5.2.4.3/lib/rails/templates/rails/welcome/index.html.erb (16.5ms)
+Completed 200 OK in 577ms (Views: 381.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-07-08 14:25:29 -0700
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/Adrian/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/railties-5.2.4.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/Adrian/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/railties-5.2.4.3/lib/rails/templates/rails/welcome/index.html.erb (5.1ms)
+Completed 200 OK in 33ms (Views: 23.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-07-08 14:27:24 -0700
+Processing by Rails::WelcomeController#index as */*
+  Rendering /Users/Adrian/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/railties-5.2.4.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/Adrian/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/railties-5.2.4.3/lib/rails/templates/rails/welcome/index.html.erb (96.9ms)
+Completed 200 OK in 3418ms (Views: 2067.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-07-08 14:29:19 -0700
+Processing by Rails::WelcomeController#index as */*
+  Rendering /Users/Adrian/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/railties-5.2.4.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/Adrian/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/railties-5.2.4.3/lib/rails/templates/rails/welcome/index.html.erb (11.9ms)
+Completed 200 OK in 1519ms (Views: 1056.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/user" for ::1 at 2020-07-08 14:29:29 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/user"):
+  
+actionpack (5.2.4.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.4.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.4.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/users" for ::1 at 2020-07-08 14:29:49 -0700
+  
+AbstractController::ActionNotFound (The action 'index' could not be found for UsersController):
+  
+actionpack (5.2.4.3) lib/abstract_controller/base.rb:129:in `process'
+actionview (5.2.4.3) lib/action_view/rendering.rb:32:in `process'
+actionpack (5.2.4.3) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.4.3) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.4.3) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.4.3) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.4.3) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.4.3) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.4.3) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.4.3) lib/action_dispatch/routing/route_set.rb:840:in `call'
+rack (2.2.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.4.3) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.4.3) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.4.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.4.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/users" for ::1 at 2020-07-08 14:31:39 -0700
+Processing by UsersController#index as */*
+No template found for UsersController#index, rendering head :no_content
+Completed 204 No Content in 2047ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for ::1 at 2020-07-08 14:32:12 -0700
+Processing by UsersController#index as */*
+No template found for UsersController#index, rendering head :no_content
+Completed 204 No Content in 3229ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for ::1 at 2020-07-08 14:34:03 -0700
+Processing by UsersController#index as */*
+  Rendering text template
+  Rendered text template (0.7ms)
+Completed 200 OK in 285ms (Views: 104.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users?fav_food=pizza" for ::1 at 2020-07-08 14:36:48 -0700
+Processing by UsersController#index as */*
+  Parameters: {"fav_food"=>"pizza"}
+  Rendering text template
+  Rendered text template (0.0ms)
+Completed 200 OK in 6ms (Views: 2.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users?fav_food=pizza" for ::1 at 2020-07-08 14:37:16 -0700
+  
+AbstractController::ActionNotFound (The action 'create' could not be found for UsersController):
+  
+actionpack (5.2.4.3) lib/abstract_controller/base.rb:129:in `process'
+actionview (5.2.4.3) lib/action_view/rendering.rb:32:in `process'
+actionpack (5.2.4.3) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.4.3) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.4.3) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.4.3) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.4.3) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.4.3) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.4.3) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.4.3) lib/action_dispatch/routing/route_set.rb:840:in `call'
+rack (2.2.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:40:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.4.3) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.4.3) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.4.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.4.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started POST "/users?fav_food=pizza" for ::1 at 2020-07-08 14:37:58 -0700
+Processing by UsersController#create as */*
+  Parameters: {"fav_food"=>"pizza"}
+Completed 200 OK in 76ms (Views: 75.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users?fav_food=pizza" for ::1 at 2020-07-08 14:38:13 -0700
+Processing by UsersController#create as */*
+  Parameters: {"fav_food"=>"pizza"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users?fav_food=pizza" for ::1 at 2020-07-08 14:38:49 -0700
+Processing by UsersController#index as */*
+  Parameters: {"fav_food"=>"pizza"}
+  Rendering text template
+  Rendered text template (0.0ms)
+Completed 200 OK in 2ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users?fav_food=pizza" for ::1 at 2020-07-08 14:39:02 -0700
+Processing by UsersController#create as */*
+  Parameters: {"fav_food"=>"pizza"}
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users?fav_food=pizza" for ::1 at 2020-07-08 14:39:48 -0700
+Processing by UsersController#index as */*
+  Parameters: {"fav_food"=>"pizza"}
+  Rendering text template
+  Rendered text template (0.1ms)
+Completed 200 OK in 1ms (Views: 0.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users?fav_food=pizza" for ::1 at 2020-07-08 14:40:07 -0700
+Processing by UsersController#create as */*
+  Parameters: {"fav_food"=>"pizza"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/2" for ::1 at 2020-07-08 14:41:08 -0700
+  
+ActionController::RoutingError (No route matches [POST] "/users/2"):
+  
+actionpack (5.2.4.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.4.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.4.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started POST "/users/2" for ::1 at 2020-07-08 14:41:49 -0700
+  
+ActionController::RoutingError (No route matches [POST] "/users/2"):
+  
+actionpack (5.2.4.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.4.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.4.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started POST "/users/2" for ::1 at 2020-07-08 14:42:19 -0700
+  
+ActionController::RoutingError (No route matches [POST] "/users/2"):
+  
+actionpack (5.2.4.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.4.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.4.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/users/2" for ::1 at 2020-07-08 14:42:41 -0700
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"2"}
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/2?some_category[a_key]=another%20value&some_category[a_second_key]=yet%20another%20value" for ::1 at 2020-07-08 14:45:36 -0700
+Processing by UsersController#show as */*
+  Parameters: {"some_category"=>{"a_key"=>"another value", "a_second_key"=>"yet another value"}, "id"=>"2"}
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/2?some_category[a_key]=another%20value&some_category[a_second_key]=yet%20another%20value" for ::1 at 2020-07-08 14:45:46 -0700
+  
+ActionController::RoutingError (No route matches [POST] "/users/2"):
+  
+actionpack (5.2.4.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.4.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.4.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/users/2?some_category[a_key]=another%20value&some_category[a_second_key]=yet%20another%20value" for ::1 at 2020-07-08 14:46:21 -0700
+Processing by UsersController#show as */*
+  Parameters: {"some_category"=>{"a_key"=>"another value", "a_second_key"=>"yet another value"}, "id"=>"2"}
+Completed 200 OK in 2ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/2?some_category[a_key]=another%20value&some_category[a_second_key]=yet%20another%20value&category_2[what_a_key]=this%20is%20a%20test" for ::1 at 2020-07-08 14:47:38 -0700
+Processing by UsersController#show as */*
+  Parameters: {"some_category"=>{"a_key"=>"another value", "a_second_key"=>"yet another value"}, "category_2"=>{"what_a_key"=>"this is a test"}, "id"=>"2"}
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/2?some_category[a_key]=another%20value&some_category[a_second_key]=yet%20another%20value&category_2[what_a_key]=this%20is%20a%20test" for ::1 at 2020-07-08 14:48:11 -0700
+Processing by UsersController#show as */*
+  Parameters: {"some_category"=>{"a_key"=>"another value", "a_second_key"=>"yet another value"}, "category_2"=>{"what_a_key"=>"this is a test"}, "id"=>"2"}
+Completed 200 OK in 1ms (Views: 0.6ms | ActiveRecord: 0.0ms)
+
+
+  [1m[35m (59.4ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  ↳ bin/rails:9
+  [1m[35m (26.3ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ bin/rails:9
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT pg_try_advisory_lock(642293562874849410)[0m
+  ↳ bin/rails:9
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to CreateUsers (20200708215227)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (58.2ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "name" character varying NOT NULL, "email" character varying NOT NULL, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20200708215227_create_users.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.8ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20200708215227"]]
+  ↳ bin/rails:9
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (9.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Create (33.2ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2020-07-08 21:54:47.214107"], ["updated_at", "2020-07-08 21:54:47.214107"]]
+  ↳ bin/rails:9
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_advisory_unlock(642293562874849410)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (12.9ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (64.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "bob"], ["email", "bob@bob.com"], ["created_at", "2020-07-08 21:57:27.747717"], ["updated_at", "2020-07-08 21:57:27.747717"]]
+  [1m[35m (40.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (30.7ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "bob2"], ["email", "bob2@bob.com"], ["created_at", "2020-07-08 21:58:26.482392"], ["updated_at", "2020-07-08 21:58:26.482392"]]
+  [1m[35m (49.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (34.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (92.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "bob3"], ["email", "bob3@bob.com"], ["created_at", "2020-07-08 21:58:43.305020"], ["updated_at", "2020-07-08 21:58:43.305020"]]
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/users/2" for ::1 at 2020-07-08 15:02:13 -0700
+  [1m[35m (33.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/Adrian/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"2"}
+Completed 200 OK in 182ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for ::1 at 2020-07-08 15:02:28 -0700
+Processing by UsersController#index as */*
+  Rendering text template
+  Rendered text template (0.0ms)
+Completed 200 OK in 78ms (Views: 75.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for ::1 at 2020-07-08 15:03:25 -0700
+Processing by UsersController#index as */*
+Completed 200 OK in 1ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/2" for ::1 at 2020-07-08 15:03:39 -0700
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"2"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for ::1 at 2020-07-08 15:04:18 -0700
+Processing by UsersController#index as */*
+Completed 200 OK in 3ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for ::1 at 2020-07-08 15:05:27 -0700
+Processing by UsersController#index as */*
+Completed 500 Internal Server Error in 39ms (ActiveRecord: 0.0ms)
+
+
+  
+ArgumentError (Unknown key: :presence. Valid keys are: :on, :if, :unless, :prepend. Perhaps you meant to call `validates` instead of `validate`?):
+  
+app/models/user.rb:2:in `<class:User>'
+app/models/user.rb:1:in `<top (required)>'
+app/controllers/users_controller.rb:3:in `index'
+Started GET "/users" for ::1 at 2020-07-08 15:06:01 -0700
+Processing by UsersController#index as */*
+  [1m[36mUser Load (391.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:3
+Completed 200 OK in 1075ms (Views: 64.8ms | ActiveRecord: 1004.7ms)
+
+
+Started POST "/users?user[email]=bob4@bob.com&user[name]=bob4" for ::1 at 2020-07-08 15:09:13 -0700
+Processing by UsersController#create as */*
+  Parameters: {"user"=>{"email"=>"bob4@bob.com", "name"=>"bob4"}}
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `[]' for nil:NilClass):
+  
+app/controllers/users_controller.rb:7:in `create'
+Started POST "/users?user[email]=bob4@bob.com&user[name]=bob4" for ::1 at 2020-07-08 15:09:49 -0700
+Processing by UsersController#create as */*
+  Parameters: {"user"=>{"email"=>"bob4@bob.com", "name"=>"bob4"}}
+  [1m[35m (71.9ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:9
+  [1m[36mUser Create (205.8ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "bob4"], ["email", "bob4@bob.com"], ["created_at", "2020-07-08 22:09:50.490007"], ["updated_at", "2020-07-08 22:09:50.490007"]]
+  ↳ app/controllers/users_controller.rb:9
+  [1m[35m (96.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:9
+Completed 200 OK in 840ms (Views: 20.5ms | ActiveRecord: 594.7ms)
+
+
+Started POST "/users" for ::1 at 2020-07-08 15:10:02 -0700
+Processing by UsersController#create as */*
+Completed 400 Bad Request in 8ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: user):
+  
+app/controllers/users_controller.rb:7:in `create'
+Started GET "/users" for ::1 at 2020-07-08 15:10:24 -0700
+Processing by UsersController#index as */*
+  [1m[36mUser Load (17.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:3
+Completed 200 OK in 25ms (Views: 4.2ms | ActiveRecord: 17.0ms)
+
+
+Started POST "/users?user[email]=bob5@bob.com" for ::1 at 2020-07-08 15:12:19 -0700
+Processing by UsersController#create as */*
+  Parameters: {"user"=>{"email"=>"bob5@bob.com"}}
+  [1m[35m (1.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:8
+  [1m[35m (8.3ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/users_controller.rb:8
+Completed 422 Unprocessable Entity in 516ms (ActiveRecord: 122.3ms)
+
+
+  
+ActiveRecord::RecordInvalid (Validation failed: Name can't be blank):
+  
+app/controllers/users_controller.rb:8:in `create'
+Started POST "/users?user[email]=bob5@bob.com" for ::1 at 2020-07-08 15:13:36 -0700
+Processing by UsersController#create as */*
+  Parameters: {"user"=>{"email"=>"bob5@bob.com"}}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:8
+  [1m[35m (1.4ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/users_controller.rb:8
+Completed 422 Unprocessable Entity in 535ms (Views: 0.2ms | ActiveRecord: 165.6ms)
+
+
+Started DELETE "/users/2" for ::1 at 2020-07-08 15:16:32 -0700
+Processing by UsersController#destroy as */*
+  Parameters: {"id"=>"2"}
+No template found for UsersController#destroy, rendering head :no_content
+Completed 204 No Content in 2929ms (ActiveRecord: 0.0ms)
+
+
+Started DELETE "/users/2" for ::1 at 2020-07-08 15:20:25 -0700
+Processing by UsersController#destroy as */*
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:24
+  [1m[35m (55.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:25
+  [1m[36mUser Destroy (2.5ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 2]]
+  ↳ app/controllers/users_controller.rb:25
+  [1m[35m (2.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:25
+No template found for UsersController#destroy, rendering head :no_content
+Completed 204 No Content in 3938ms (ActiveRecord: 354.4ms)
+
+
+Started GET "/users" for ::1 at 2020-07-08 15:20:43 -0700
+Processing by UsersController#index as */*
+  [1m[36mUser Load (228.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:3
+Completed 200 OK in 232ms (Views: 3.0ms | ActiveRecord: 228.4ms)
+
+
+Started GET "/users/3" for ::1 at 2020-07-08 15:22:26 -0700
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (75.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:16
+No template found for UsersController#show, rendering head :no_content
+Completed 204 No Content in 5680ms (ActiveRecord: 819.5ms)
+
+
+Started GET "/users/3" for ::1 at 2020-07-08 15:22:58 -0700
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (4.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:16
+Completed 200 OK in 2098ms (Views: 50.3ms | ActiveRecord: 1643.4ms)
+
+
+Started PATCH "/users/3?user[email]=bob6@bob.com" for ::1 at 2020-07-08 15:25:54 -0700
+Processing by UsersController#update as */*
+  Parameters: {"user"=>{"email"=>"bob6@bob.com"}, "id"=>"3"}
+  [1m[36mUser Load (2.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:21
+  [1m[36mUser Load (6.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:22
+Completed 404 Not Found in 758ms (ActiveRecord: 40.3ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=name):
+  
+app/controllers/users_controller.rb:22:in `update'
+Started PATCH "/users/3?user[email]=bob6@bob.com" for ::1 at 2020-07-08 15:26:43 -0700
+Processing by UsersController#update as */*
+  Parameters: {"user"=>{"email"=>"bob6@bob.com"}, "id"=>"3"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:21
+Completed 500 Internal Server Error in 1013ms (ActiveRecord: 829.9ms)
+
+
+  
+ArgumentError (wrong number of arguments (given 3, expected 1..2)):
+  
+app/controllers/users_controller.rb:22:in `update'
+Started PATCH "/users/3?user[email]=bob6@bob.com" for ::1 at 2020-07-08 15:27:16 -0700
+Processing by UsersController#update as */*
+  Parameters: {"user"=>{"email"=>"bob6@bob.com"}, "id"=>"3"}
+  [1m[36mUser Load (577.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:22
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:22
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/users_controller.rb:22
+Completed 500 Internal Server Error in 1257ms (ActiveRecord: 1103.9ms)
+
+
+  
+ArgumentError (When assigning attributes, you must pass a hash as an argument.):
+  
+app/controllers/users_controller.rb:22:in `update'
+Started PATCH "/users/3?user[email]=bob6@bob.com" for ::1 at 2020-07-08 15:28:07 -0700
+  
+SyntaxError (/Users/Adrian/Desktop/W6d3/routes_controllers/app/controllers/users_controller.rb:22: syntax error, unexpected ',', expecting =>
+    User.update(id: {:name, :email})
+                          ^
+/Users/Adrian/Desktop/W6d3/routes_controllers/app/controllers/users_controller.rb:31: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/controllers/users_controller.rb:22: syntax error, unexpected ',', expecting =>
+app/controllers/users_controller.rb:31: syntax error, unexpected end-of-input, expecting keyword_end
+Started PATCH "/users/3?user[email]=bob6@bob.com" for ::1 at 2020-07-08 15:28:26 -0700
+  
+SyntaxError (/Users/Adrian/Desktop/W6d3/routes_controllers/app/controllers/users_controller.rb:22: syntax error, unexpected ':', expecting =>
+    User.update(id: {:name :email})
+                           ^
+/Users/Adrian/Desktop/W6d3/routes_controllers/app/controllers/users_controller.rb:31: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/controllers/users_controller.rb:22: syntax error, unexpected ':', expecting =>
+app/controllers/users_controller.rb:31: syntax error, unexpected end-of-input, expecting keyword_end
+Started PATCH "/users/3?user[email]=bob4@bob.com" for ::1 at 2020-07-08 15:33:24 -0700
+Processing by UsersController#update as */*
+  Parameters: {"user"=>{"email"=>"bob4@bob.com"}, "id"=>"3"}
+  [1m[36mUser Load (7.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:21
+  [1m[35m (31.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:22
+  [1m[36mUser Update (9.2ms)[0m  [1m[33mUPDATE "users" SET "email" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["email", "bob4@bob.com"], ["updated_at", "2020-07-08 22:33:27.440284"], ["id", 3]]
+  ↳ app/controllers/users_controller.rb:22
+  [1m[35m (90.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:22
+Completed 200 OK in 1799ms (Views: 1.8ms | ActiveRecord: 1699.8ms)
+
+
+Started PATCH "/users/3?user[email]=bob7@bob.com" for ::1 at 2020-07-08 15:33:59 -0700
+Processing by UsersController#update as */*
+  Parameters: {"user"=>{"email"=>"bob7@bob.com"}, "id"=>"3"}
+  [1m[36mUser Load (24.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:21
+  [1m[35m (5.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:22
+  [1m[36mUser Update (1.1ms)[0m  [1m[33mUPDATE "users" SET "email" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["email", "bob7@bob.com"], ["updated_at", "2020-07-08 22:34:00.752548"], ["id", 3]]
+  ↳ app/controllers/users_controller.rb:22
+  [1m[35m (8.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:22
+Completed 200 OK in 56ms (Views: 4.3ms | ActiveRecord: 40.1ms)
+
+
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_try_advisory_lock(642293562874849410)[0m
+  ↳ bin/rails:9
+  [1m[35m (2.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to EditUsers (20200708223846)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (1.0ms)[0m  [1m[35mALTER TABLE "users" RENAME COLUMN "name" TO "username"[0m
+  ↳ db/migrate/20200708223846_edit_users.rb:3
+  [1m[35m (95.9ms)[0m  [1m[35mALTER TABLE "users" DROP COLUMN "email"[0m
+  ↳ db/migrate/20200708223846_edit_users.rb:4
+  [1m[35m (4.7ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_users_on_username" ON "users"  ("username")[0m
+  ↳ db/migrate/20200708223846_edit_users.rb:6
+  [1m[36mActiveRecord::SchemaMigration Create (9.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20200708223846"]]
+  ↳ bin/rails:9
+  [1m[35m (1.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (5.9ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (1.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT pg_advisory_unlock(642293562874849410)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (1.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (4.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/Adrian/.rbenv/versions/2.5.1/bin/annotate:23
+  [1m[35m (2.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/Adrian/.rbenv/versions/2.5.1/bin/annotate:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(642293562874849410)[0m
+  ↳ bin/rails:9
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to CreateArtworks (20200708231206)
+  [1m[35m (5.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (115.8ms)[0m  [1m[35mCREATE TABLE "artworks" ("id" bigserial primary key, "title" character varying NOT NULL, "image_url" character varying NOT NULL, "artist_id" integer NOT NULL, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20200708231206_create_artworks.rb:3
+  [1m[35m (11.1ms)[0m  [1m[35mCREATE  INDEX  "index_artworks_on_artist_id" ON "artworks"  ("artist_id")[0m
+  ↳ db/migrate/20200708231206_create_artworks.rb:9
+  [1m[36mActiveRecord::SchemaMigration Create (35.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20200708231206"]]
+  ↳ bin/rails:9
+  [1m[35m (58.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (2.7ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (7.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_advisory_unlock(642293562874849410)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(642293562874849410)[0m
+  ↳ bin/rails:9
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to CreateArtworkShares (20200708232543)
+  [1m[35m (3.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (26.6ms)[0m  [1m[35mCREATE TABLE "artwork_shares" ("id" bigserial primary key, "artwork_id" integer NOT NULL, "viewer_id" integer NOT NULL)[0m
+  ↳ db/migrate/20200708232543_create_artwork_shares.rb:3
+  [1m[35m (8.4ms)[0m  [1m[35mCREATE  INDEX  "index_artwork_shares_on_artwork_id" ON "artwork_shares"  ("artwork_id")[0m
+  ↳ db/migrate/20200708232543_create_artwork_shares.rb:7
+  [1m[35m (16.2ms)[0m  [1m[35mCREATE  INDEX  "index_artwork_shares_on_viewer_id" ON "artwork_shares"  ("viewer_id")[0m
+  ↳ db/migrate/20200708232543_create_artwork_shares.rb:8
+  [1m[36mActiveRecord::SchemaMigration Create (3.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20200708232543"]]
+  ↳ bin/rails:9
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (8.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT pg_advisory_unlock(642293562874849410)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (28.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (2.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/Adrian/.rbenv/versions/2.5.1/bin/annotate:23
