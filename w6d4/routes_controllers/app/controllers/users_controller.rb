@@ -52,3 +52,10 @@ class UsersController < ApplicationController
     params.require(:user).permit(:username)
   end
 end
+
+
+username => anya
+awefawuhfausdhf
+query => 'awefawuhfausdhf'
+
+params[:id] = 1
