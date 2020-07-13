@@ -1,0 +1,38 @@
+<style>
+table, th, td {
+  border: 1px solid black;
+}
+</style>
+
+<h1>Cats Show Page</h1>
+
+ <a href="<%=cats_url%>">Back to all cats!</a> 
+  
+
+<table>
+    <thead>
+        <tr>
+            <th colspan="2"><%= @cat.name %></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>birthday: </td>
+            <td><%= @cat.birth_date %></td>
+        </tr>
+        <tr>
+            <td>color: </td>
+            <td><%= @cat.color %></td>
+        </tr>
+        <tr>
+            <td>sex: </td>
+            <td><%= @cat.sex %></td>
+        </tr>
+        <tr>
+            <td>description: </td>
+            <td><%= @cat.description %></td>
+        </tr>
+    </tbody>
+</table>
+
+<a href="<%=edit_cat_url(@cat)%>">Edit cat</a>
