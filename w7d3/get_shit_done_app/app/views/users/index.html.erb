@@ -1,0 +1,7 @@
+<h1>THIS IS OUR INDEX PAGE! YAY</h1>
+
+<% @users.each do |user| %>
+    <li>
+        <%= render user.username %>
+    </li>
+<% end %>
