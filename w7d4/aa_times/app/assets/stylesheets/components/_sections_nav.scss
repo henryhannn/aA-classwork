@@ -1,0 +1,15 @@
+.sections-nav {
+    display: flex;
+}
+
+.sections-nav ul {
+    display: flex;
+}
+
+.sections-nav li {
+    margin: 10px;
+}
+
+.sections-nav li:hover {
+    background-color: $light-gray;
+}

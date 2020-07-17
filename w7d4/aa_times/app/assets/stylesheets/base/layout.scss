@@ -1,0 +1,105 @@
+/* Define application-wide selectors here!*/
+
+html {
+	position: relative;
+	height: 100%;
+}
+
+body {
+	width: 80%;
+	margin: 0 auto;
+	font-family: $serif;
+	font-size: 12px;
+	
+}
+
+button {
+	background-color: navy;
+	border-color: grey; 
+	color: white; 
+	font-weight: bold;
+	padding: 10px 10px;
+	border-radius: 10px;
+	transition: none; 
+	font-family: sans-serif;
+	text-transform: uppercase;
+	font-size: 12px;
+	text-align: center;
+}
+
+button:hover {
+	background-color: lightblue;
+	border-color: grey;
+}
+
+/*
+	Header Rules
+*/
+
+hr {
+	border: 0;
+	height: 1px;
+	background-color: $light-gray;
+}
+
+.hr-top, .hr-bottom {
+	width: 100%;
+	margin: 0;
+}
+
+.hr-top {
+	height: 2px;
+	margin-bottom: 1px;
+}
+
+.main-nav {
+	display: flex;
+	justify-content: space-between;
+}
+
+.left-nav {
+	width: 50%
+}
+
+.right-nav {
+	width: 50%
+}
+
+.left-nav > ul {
+	display: flex;
+	justify-content: flex-start;
+}
+
+.left-nav li {
+	margin: 20px;
+}
+
+.right-nav > ul {
+	display: flex;
+	justify-content: flex-end;
+}
+
+.right-nav li {
+	margin: 20px;
+}
+
+.fas-fa-cog {
+	width: 50%;
+}
+
+.gear-dropdown {
+	display: none;
+	position: absolute;
+	background-color: lightsteelblue;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	padding: 0px 20px 0px 0px;
+	min-width: 200px;
+}
+
+.dropdown:hover .gear-dropdown{
+	display: block;
+}
+  
+.gear-dropdown li:hover{
+	background-color: #dadce0;
+}
