@@ -1,0 +1,63 @@
+.main-content {
+    display: block;
+    width: 20%;
+    float: left;
+}
+
+.main-content a {
+    text-decoration: underline;
+}
+
+.main-content a:first-child {
+    font-size: 25px;
+    font-style: italic;
+    font-weight: bold;
+    color: black;
+}
+
+.main-content2 {
+    display: block;
+    float: left;
+    width: 40%;
+}
+
+.main-content2 a {
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.main-content3 {
+    display: block;
+    float: right;
+    width: 40%;
+}
+
+.main-content3 ul {
+    list-style: initial;
+    padding-left: 20px;
+}
+
+.coloumn-1 {
+    display: block;
+    float: left;
+    width: 50%;
+}
+
+.coloumn-2 {
+    display: block;
+    float: right;
+    width: 50%;
+}
+
+.main-content3 .thumbnail {
+    max-width: 100%;
+    height: auto;
+}
+
+input {
+    width: 50%;
+    padding: 5px 12px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid black;
+}
