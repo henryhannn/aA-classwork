@@ -1,0 +1,11 @@
+/* PHASE 2: Notifications */
+.badge {
+    background-color: black;
+    padding: 5px 10px;
+    display: inline-block;
+    border-radius: 50%;
+}
+
+.header-list :first-child {
+    position: relative;
+}
