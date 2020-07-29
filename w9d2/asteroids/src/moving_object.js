@@ -17,5 +17,4 @@ MovingObject.prototype.move = function move() {
     this.pos[1] += this.vel[1];
 };
 
-
 module.exports = MovingObject;

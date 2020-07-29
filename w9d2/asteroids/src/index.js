@@ -1,6 +1,8 @@
 const MovingObject = require("./moving_object.js");
+const Asteroid = require("./asteroid.js");
 
 window.MovingObject = MovingObject;
+window.Asteroid = Asteroid;
 
 window.addEventListener('DOMContentLoaded', (event) => {
     const canvas1 = document.getElementById("game-canvas");
