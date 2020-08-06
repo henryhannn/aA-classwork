@@ -1,0 +1,54 @@
+.bombed {
+  border-style: inset;
+}
+
+.revealed {
+  border-style: inset;
+  text-align: center;
+}
+
+.flagged {
+  border-style: outset;
+}
+
+.unexplored {
+  border-style: outset;
+}
+
+.tile {
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: center;
+}
+
+.modal-screen {
+  z-index: 998;
+  position: absolute;
+  top: 0%;
+  bottom: 0%;
+  left: 0%;
+  right: 0%;
+  background: rgba(0, 0, 0, .3);
+}
+
+.modal-content {
+  z-index: 999;
+  position: absolute;
+  background: white;
+  border-radius: 5px;
+  border: 1px solid black;
+  font-size: 20px;
+  width: 200px;
+  height: 120px;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  transform: translateX(-50%) translateY(-50%);
+}
