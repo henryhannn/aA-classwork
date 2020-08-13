@@ -1,27 +1,33 @@
 class SessionsController < ApplicationController
-  def new
-    render :new
-  end
+  before_action :require_not_logged_in!, only: [:create, :new]
+  before_action :require_logged_in!, only: [:destroy]
 
   def create
-    # Find user by credentials
-    @user = User.find_by_credentials(params[:user][:username], params[:user][:password])
-    # Flash errors, if any.
-    # Render :new if invalid credentials (give the user another chance to login)
+    # signs a user in
+    @user = User.find_by_credentials(
+      params[:user][:username],
+      params[:user][:password]
+    )
+
     if @user.nil?
-      flash.now[:errors] = ['Invalid username or password.']
+      # no user with the given name!
+      flash.now[:errors] = ['Invalid credentials']
       render :new
     else
-    # Log them in and redirect them if we find them
-      login!(@user)
-      redirect_to user_url(@user)
+      # sign the user in
+      log_in!(@user)
+      redirect_to feed_url
     end
-
   end
 
   def destroy
-    logout!
-    # redirect to login page
+    # sign a user out
+    log_out!
     redirect_to new_session_url
+  end
+
+  def new
+    # presents a login form
+    render :new
   end
 end

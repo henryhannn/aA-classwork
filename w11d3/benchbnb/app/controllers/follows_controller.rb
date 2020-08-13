@@ -1,17 +1,28 @@
 class FollowsController < ApplicationController
+  before_action :require_logged_in!
+
   def create
-    @follow = Follow.new
-    @follow.followee_id = params[:id]
-    @follow.follower_id = current_user.id
-    unless @follow.save
-      flash[:errors] = @follow.errors.full_messages
+    # simulate latency
+    sleep(1)
+
+    @follow = current_user.out_follows.create!(followee_id: params[:user_id])
+
+    respond_to do |format|
+      format.html { redirect_to request.referrer }
+      format.json { render json: @follow }
     end
-    redirect_to user_url(params[:id])
   end
 
   def destroy
-    @follow = Follow.find(params[:id])
-    @follow.destroy
-    redirect_to user_url(@follow.followee_id)
+    # simulate latency
+    sleep(1)
+
+    @follow = current_user.out_follows.find_by(followee_id: params[:user_id])
+    @follow.destroy!
+
+    respond_to do |format|
+      format.html { redirect_to request.referrer }
+      format.json { render json: @follow }
+    end
   end
 end

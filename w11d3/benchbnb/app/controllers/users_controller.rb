@@ -1,69 +1,49 @@
 class UsersController < ApplicationController
-
-  def new
-    @user = User.new
-    render :new
-  end
+  before_action :require_not_logged_in!, only: [:create, :new]
+  before_action :require_logged_in!, only: [:show]
 
   def create
+    # sign up the user
     @user = User.new(user_params)
     if @user.save
-      login!(@user)
-      redirect_to user_url(@user)
+      # redirect them to the new user's show page
+      log_in!(@user)
+      redirect_to feed_url
     else
-      # Tell the user that something went wrong. Let them try again.
-      flash.now[:errors] = @user.errors.full_messages
+      # input didn't pass validation; re-render sign up form.
       render :new
     end
   end
 
+  def new
+    # present form for signup
+    @user = User.new # dummy user object
+    render :new
+  end
+
   def show
-    @user = User.find(params[:id])
-    if @user
-      render :show
-    else
-      render json: @user.errors.full_messages, status: 404
+    if current_user.nil?
+      # let them log in
+      redirect_to new_session_url
+      return
     end
-  end
 
-  def index
-    @users = User.all
-    render :index
-  end
-
-  def edit
-    @user = User.find(params[:id])
-    render :edit
-  end
-
-  def update
-    @user = User.find(params[:id])
-    if @user.update(user_params)
-      redirect_to user_url(@user)
-    else
-      render json: @user.errors.full_messages, status: 422
-    end
-  end
-
-  def destroy
-    @user = User.find(params[:id])
-    if @user.destroy
-      redirect_to users_url
-    else
-      render plain: "You can't destroy what's not there."
-    end
+    @user = User.includes(tweets: :mentioned_users).find(params[:id])
+    render :show
   end
 
   def search
-    @users = User.where("username LIKE '%#{params[:query]}%'")
-    render json: @users
+    if params[:query].present?
+      @users = User.where('username ~ ?', params[:query])
+    else
+      @users = User.none
+    end
+
+    render :search
   end
 
-  private
-
+  protected
   def user_params
-    # params.require(:user).permit(:username, :email)
-    # Add password
-    params.require(:user).permit(:username, :email, :password)
+    self.params.require(:user).permit(:username, :password)
   end
 end

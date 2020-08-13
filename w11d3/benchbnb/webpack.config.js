@@ -1,25 +1,13 @@
-const path = require('path');
+const path = require("path");
 
 module.exports = {
-  entry: './frontend/bluebird.jsx',
+  context: __dirname,
+  entry: "./frontend/twitter.js",
   output: {
-    path: path.resolve(__dirname, 'app', 'assets', 'javascripts'),
-    filename: 'bundle.js'
-  },
-  module: {
-    rules: [
-      {
-        test: [/\.jsx?$/],
-        exclude: /node_modules/,
-        loader: 'babel-loader',
-        query: {
-          presets: ['env', 'react']
-        }
-      }
-    ]
+    path: path.join(__dirname, 'app', 'assets', 'javascripts'),
+    filename: "bundle.js",
+    devtoolModuleFilenameTemplate: '[resourcePath]',
+    devtoolFallbackModuleFilenameTemplate: '[resourcePath]?[hash]'
   },
   devtool: 'source-map',
-  resolve: {
-    extensions: ['.js', '.jsx', '*'],
-  }
 };

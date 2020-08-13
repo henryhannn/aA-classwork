@@ -7,29 +7,32 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 User.destroy_all
-Chirp.destroy_all
-Like.destroy_all
+Tweet.destroy_all
 
-user1 = User.create(username: Faker::Name.name, email: Faker::Internet.email, password: 'password')
-user2 = User.create(username: Faker::Name.name, email: Faker::Internet.email, password: 'password')
-user3 = User.create(username: Faker::Name.name, email: Faker::Internet.email, password: 'password')
-user4 = User.create(username: Faker::Name.name, email: Faker::Internet.email, password: 'password')
-user5 = User.create(username: Faker::Name.name, email: Faker::Internet.email, password: 'password')
-user6 = User.create(username: Faker::Name.name, email: Faker::Internet.email, password: 'password')
-user7 = User.create(username: Faker::Name.name, email: Faker::Internet.email, password: 'password')
-user8 = User.create(username: Faker::Name.name, email: Faker::Internet.email, password: 'password')
-user9 = User.create(username: Faker::Name.name, email: Faker::Internet.email, password: 'password')
+CATS = %w(breakfast earl curie markov gizmo kiki sally)
 
-chirp1 = Chirp.create(body: Faker::Movies::HarryPotter.quote, author_id: user1.id)
-chirp2 = Chirp.create(body: Faker::Movies::HarryPotter.quote, author_id: user1.id)
-chirp3 = Chirp.create(body: Faker::Movies::HarryPotter.quote, author_id: user1.id)
-chirp4 = Chirp.create(body: Faker::Movies::HarryPotter.quote, author_id: user2.id)
-chirp5 = Chirp.create(body: Faker::Movies::HarryPotter.quote, author_id: user2.id)
-chirp6 = Chirp.create(body: Faker::Movies::HarryPotter.quote, author_id: user2.id)
+CATS.each do |cat|
+  u = User.create!(username: cat, password: "#{cat}#{cat}")
+end
 
-Like.create(user_id: user3.id, chirp_id: chirp1.id)
-Like.create(user_id: user4.id, chirp_id: chirp2.id)
-Like.create(user_id: user5.id, chirp_id: chirp3.id)
-Like.create(user_id: user3.id, chirp_id: chirp3.id)
-Like.create(user_id: user4.id, chirp_id: chirp1.id)
-Like.create(user_id: user5.id, chirp_id: chirp2.id)
+MESSAGES = [
+  'Ate some tuna',
+  'Chased a string',
+  'Bounced a ball',
+  'Took a photo of a sandwich',
+  'Took a long nap',
+  'Jumped on some piano keys',
+  'Is that a mouse?',
+  'Scratched a human',
+  'Jumped to the top of the shelf!',
+  'Do cats know how to tweet? YES, we do.',
+  'Set world napping record',
+  'xvyadfoiuasdfnasfdn'
+]
+
+User.all.each do |user|
+  40.times do
+    msg = MESSAGES.sample
+    Tweet.create!(user_id: user.id, content: msg, created_at: rand(3000).days.ago)
+  end
+end
